@@ -4,87 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title id="siteTitle">Linga Office Download</title>
-  
   <meta name="google-site-verification" content="00BF9XY4OcJ0vPiSCW_mQx-E7YQQF9Bdz1Txe996hFs" />
-  
-  <style>
-    /* Общие стили */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #333;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    header {
-      background-color: #343a40;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    .header-buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .header-buttons button {
-      padding: 8px 12px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      font-size: 14px;
-      background-color: #6c757d;
-      color: #fff;
-    }
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .download-section {
-      background-color: #f4f4f4;
-      border: 1px solid #ced4da;
-      border-radius: 5px;
-      padding: 20px;
-      margin-bottom: 30px;
-      color: #000;
-    }
-    .download-section strong, .download-section h2, 
-    .download-section p, .download-section a {
-      color: #000;
-    }
-    .download-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-    .download-button:hover {
-      background-color: #0056b3;
-    }
-    .info-section ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    .watermark {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      font-size: 12px;
-      color: gray;
-      opacity: 0.5;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -116,33 +37,9 @@
     </section>
   </main>
   <div class="watermark">© BeaverV000 team</div>
-  <script>
-    let currentLanguage = "en"; 
-    let currentTheme = "light";
-
-    document.getElementById("toggleLanguage").addEventListener("click", function() {
-      currentLanguage = currentLanguage === "en" ? "ru" : "en";
-    });
-
-    document.getElementById("toggleTheme").addEventListener("click", function() {
-      if (currentTheme === "light") {
-        currentTheme = "dark";
-        document.body.style.backgroundColor = "#121212";
-        document.body.style.color = "#e0e0e0";
-      } else {
-        currentTheme = "light";
-        document.body.style.backgroundColor = "#ffffff";
-        document.body.style.color = "#333";
-      }
-    });
-  </script>
+  <script src="script.js"></script>
   <a href="https://ko-fi.com/Z8Z21EVKZ0" target="_blank">
     <img src="https://storage.ko-fi.com/cdn/kofi5.png" alt="Buy Me a Coffee" style="height: 36px; border: 0;">
-</a>
+  </a>
 </body>
 </html>
-
-<meta name="description" content="Описание твоего сайта">
-<meta name="keywords" content="GitHub Pages, Linga Office, BeaverV000Team">
-<meta name="robots" content="index, follow">
-
