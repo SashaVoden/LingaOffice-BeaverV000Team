@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="siteTitle">Linga Office Download</title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background-color: #343a40;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .header-buttons button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #6c757d;
+      color: #fff;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2, p {
+      margin: 0 0 15px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    /* Секция скачивания - фиксированный чёрный текст */
+    .download-section {
+      background-color: #f4f4f4;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+      color: #000; /* Фиксированный цвет текста */
+    }
+    .download-section strong {
+      color: #000;
+    }
+    .download-section h2,
+    .download-section p,
+    .download-section a {
+      color: #000; /* Фиксированный текст */
+    }
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+    .download-button:hover {
+      background-color: #0056b3;
+    }
+    /* Информационная секция */
+    .info-section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    /* Watermark */
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: gray;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="headerTitle">Linga Office Download</h1>
+    <div class="header-buttons">
+      <button id="toggleLanguage">Русский</button>
+      <button id="toggleTheme">Dark Mode</button>
+    </div>
+  </header>
+  <main>
+    <!-- Секция скачивания файла -->
+    <section class="download-section">
+      <h2 id="downloadHeader">Download Linga Office</h2>
+      <p id="downloadDescription">
+        You can download the file "Linga Office". The ZIP archive is password protected.
+      </p>
+      <p id="passwordText"><strong>Password:</strong> E8QO009868LPL</p>
+      <a id="downloadButton" class="download-button" href="LingaOffice.zip" download>Download Now</a>
+    </section>
+    <!-- Информационная секция -->
+    <section class="info-section">
+      <h2 id="infoHeader">About Linga Office</h2>
+      <p id="infoText">Programs are 98% made by AI. This archive contains the following applications:</p>
+      <ul id="appList">
+        <li>Two calculators (test versions)</li>
+        <li>An application for coordinates (X, Y)</li>
+        <li>An application for creating charts</li>
+        <li>Python Code Helper (requires Python to run)</li>
+      </ul>
+    </section>
+  </main>
+  <!-- Watermark -->
+  <div class="watermark">© BeaverV000 team</div>
+  
+  <script>
+    // Глобальные переменные языка и темы
+    let currentLanguage = "en"; // Возможные значения: "en", "ru", "uk"
+    let currentTheme = "light"; // "light" или "dark"
+
+    // Словарь переводов для элементов страницы
+    const translations = {
+      en: {
+        siteTitle: "Linga Office Download",
+        headerTitle: "Linga Office Download",
+        downloadHeader: "Download Linga Office",
+        downloadDescription: 'You can download the file "Linga Office". The ZIP archive is password protected.',
+        passwordText: "<strong>Password:</strong> E8QO009868LPL",
+        downloadButton: "Download Now",
+        infoHeader: "About Linga Office",
+        infoText: "Programs are 98% made by AI. This archive contains the following applications:",
+        appList: [
+          "Two calculators (test versions)",
+          "An application for coordinates (X, Y)",
+          "An application for creating charts",
+          "Python Code Helper (requires Python to run)"
+        ],
+        toggleLanguage: "Русский",
+        toggleTheme: "Dark Mode"
+      },
+      ru: {
+        siteTitle: "Скачать Linga Office",
+        headerTitle: "Скачать Linga Office",
+        downloadHeader: "Скачать Linga Office",
+        downloadDescription: 'Вы можете скачать файл "Linga Office". ZIP архив защищён паролем.',
+        passwordText: "<strong>Пароль:</strong> E8QO009868LPL",
+        downloadButton: "Скачать сейчас",
+        infoHeader: "О Linga Office",
+        infoText: "Программы сделаны на 98% с помощью AI. В архиве содержатся следующие приложения:",
+        appList: [
+          "Два калькулятора (тестовые версии)",
+          "Приложение для координат (X, Y)",
+          "Приложение для создания диаграмм",
+          "Python Code Helper (для работы требуется Python)"
+        ],
+        toggleLanguage: "Українська",
+        toggleTheme: "Темный режим"
+      },
+      uk: {
+        siteTitle: "Завантажити Linga Office",
+        headerTitle: "Завантажити Linga Office",
+        downloadHeader: "Завантажити Linga Office",
+        downloadDescription: 'Ви можете завантажити файл "Linga Office". ZIP архів захищено паролем.',
+        passwordText: "<strong>Пароль:</strong> E8QO009868LPL",
+        downloadButton: "Завантажити зараз",
+        infoHeader: "Про Linga Office",
+        infoText: "Програми створено на 98% за допомогою AI. В архіві знаходяться наступні застосування:",
+        appList: [
+          "Два калькулятори (тестові версії)",
+          "Застосунок для координат (X, Y)",
+          "Застосунок для створення діаграм",
+          "Python Code Helper (для роботи потрібен Python)"
+        ],
+        toggleLanguage: "English",
+        toggleTheme: "Темный режим"
+      }
+    };
+
+    // Функция обновления содержимого согласно текущему языку
+    function updateContent() {
+      const t = translations[currentLanguage];
+      document.title = t.siteTitle;
+      document.getElementById("headerTitle").innerText = t.headerTitle;
+      document.getElementById("downloadHeader").innerText = t.downloadHeader;
+      document.getElementById("downloadDescription").innerText = t.downloadDescription;
+      document.getElementById("passwordText").innerHTML = t.passwordText;
+      document.getElementById("downloadButton").innerText = t.downloadButton;
+      document.getElementById("infoHeader").innerText = t.infoHeader;
+      document.getElementById("infoText").innerText = t.infoText;
+      // Обновляем список приложений:
+      const appList = document.getElementById("appList");
+      appList.innerHTML = "";
+      t.appList.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        appList.appendChild(li);
+      });
+      document.getElementById("toggleLanguage").innerText = t.toggleLanguage;
+      document.getElementById("toggleTheme").innerText = t.toggleTheme;
+    }
+
+    // Переключение языка при нажатии кнопки в header
+    document.getElementById("toggleLanguage").addEventListener("click", function() {
+      if (currentLanguage === "en") {
+        currentLanguage = "ru";
+      } else if (currentLanguage === "ru") {
+        currentLanguage = "uk";
+      } else {
+        currentLanguage = "en";
+      }
+      updateContent();
+    });
+
+    // Переключение темы при нажатии кнопки в header
+    document.getElementById("toggleTheme").addEventListener("click", function() {
+      if (currentTheme === "light") {
+        currentTheme = "dark";
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "#e0e0e0";
+        // Меняем фон кнопки скачивания, но оставляем текст как есть (по стилю в секции скачивания текст остаётся черным)
+        document.getElementById("downloadButton").style.backgroundColor = "#1E90FF";
+      } else {
+        currentTheme = "light";
+        document.body.style.backgroundColor = "#ffffff";
+        document.body.style.color = "#333";
+        document.getElementById("downloadButton").style.backgroundColor = "#007bff";
+      }
+    });
+
+    // Изначальное обновление содержимого
+    updateContent();
+  </script>
+</body>
+</html>
