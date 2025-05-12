@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="siteTitle">Linga Office Download</title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background-color: #343a40;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .header-buttons button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #6c757d;
+      color: #fff;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .download-section {
+      background-color: #f4f4f4;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+      color: #000;
+    }
+    .download-section strong, .download-section h2, 
+    .download-section p, .download-section a {
+      color: #000;
+    }
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+    .download-button:hover {
+      background-color: #0056b3;
+    }
+    .info-section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: gray;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="headerTitle">Linga Office Download</h1>
+    <div class="header-buttons">
+      <button id="toggleLanguage">Русский</button>
+      <button id="toggleTheme">Dark Mode</button>
+    </div>
+  </header>
+  <main>
+    <section class="download-section">
+      <h2 id="downloadHeader">Download Linga Office</h2>
+      <p id="downloadDescription">You can download the file "Linga Office". The ZIP archive is password protected.</p>
+      <p id="passwordText"><strong>Password:</strong> E8QO009868LPL</p>
+      <a id="downloadButton" class="download-button" 
+         href="https://drive.google.com/uc?id=1vFYQNufx0chVwpqBt_J1vsg3rABGWfcN&export=download">
+         Download Now
+      </a>
+    </section>
+    <section class="info-section">
+      <h2 id="infoHeader">About Linga Office</h2>
+      <p id="infoText">Programs are 98% made by AI. This archive contains the following applications:</p>
+      <ul id="appList">
+        <li>Two calculators (test versions)</li>
+        <li>An application for coordinates (X, Y)</li>
+        <li>An application for creating charts</li>
+        <li>Python Code Helper (requires Python to run)</li>
+      </ul>
+    </section>
+  </main>
+  <div class="watermark">© BeaverV000 team</div>
+  <script>
+    let currentLanguage = "en"; 
+    let currentTheme = "light";
+
+    document.getElementById("toggleLanguage").addEventListener("click", function() {
+      currentLanguage = currentLanguage === "en" ? "ru" : "en";
+    });
+
+    document.getElementById("toggleTheme").addEventListener("click", function() {
+      if (currentTheme === "light") {
+        currentTheme = "dark";
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "#e0e0e0";
+      } else {
+        currentTheme = "light";
+        document.body.style.backgroundColor = "#ffffff";
+        document.body.style.color = "#333";
+      }
+    });
+  </script>
+</body>
+</html>
