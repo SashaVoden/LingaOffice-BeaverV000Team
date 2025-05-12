@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://beaverv000-team-lingaoffice.com/sitemap.xml
