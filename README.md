@@ -1,8 +1,3 @@
-i made this repo for fun🎉🎉🤣🤣
+License made for our programs that you can download on our site or with link in the index.html file
 
-joke
-
-its for our programs🦫🦫
-
-
-beaverV000 team 
+beaverV000 team
